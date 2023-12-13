@@ -35,7 +35,7 @@ function App() {
           setActiveIndex={setActiveIndex}
         />
       }
-      <SearchBar />
+      <SearchBar placeholder="Search" />
       <NewMusicForm onNewMusic={fetchMusic} />
       <DeleteButton onNewMusic={fetchMusic} />
     </div>
