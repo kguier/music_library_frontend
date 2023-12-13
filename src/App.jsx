@@ -4,6 +4,8 @@ import Header from "./components/Header/Header";
 import axios from "axios";
 import MusicList from "./components/MusicList/MusicList";
 import MusicItem from "./components/MusicItem/MusicItem";
+import SearchBar from "./components/SearchBar/SearchBar";
+import NewMusicForm from "./components/NewMusicForm/NewMusicForm";
 
 function App() {
   const [music, setMusic] = useState([]);
@@ -22,6 +24,11 @@ function App() {
     fetchMusic();
   }, []);
 
+  const handleNewMusic = (newSong) => {
+    const updatedMusic = [...music, newSong];
+    setMusic(updatedMusic);
+  };
+
   return (
     <div className="App">
       <Header />
@@ -32,6 +39,8 @@ function App() {
           setActiveIndex={setActiveIndex}
         />
       }
+      <SearchBar />
+      <NewMusicForm onNewMusic={handleNewMusic} />
     </div>
   );
 }
