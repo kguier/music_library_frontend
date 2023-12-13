@@ -1,0 +1,11 @@
+
+
+.label {
+    color: lightgray;
+}
+
+.top {
+    display: flex;
+    padding: 5px 10px;
+    
+}

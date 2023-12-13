@@ -1,4 +1,5 @@
 import MusicItem from "../MusicItem/MusicItem";
+import "./MusicList.css";
 
 const MusicList = ({ music, activeIndex, setActiveIndex }) => {
   const musicItems = music.map((song, i) => (
@@ -16,14 +17,13 @@ const MusicList = ({ music, activeIndex, setActiveIndex }) => {
   ));
 
   return (
-    <div>
-      <h3>My Songs</h3>
-      <div>
-        <span>Title</span>
-        <span>Artist</span>
-        <span>Album</span>
-        <span>Release Date</span>
-        <span>Genre</span>
+    <div className="flex-item">
+      <div className="top">
+        <span className="label">Title</span>
+        <span className="label">Artist</span>
+        <span className="label">Album</span>
+        <span className="label">Release Date</span>
+        <span className="label">Genre</span>
       </div>
       <div>{musicItems}</div>
     </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DeleteButton from "../DeleteButton/DeleteButton";
+import "./MusicItem.css";
 
 const MusicItem = ({
   title,
@@ -12,12 +13,12 @@ const MusicItem = ({
   index,
 }) => {
   return (
-    <div>
-      <span>{title}</span>
-      <span>{artist}</span>
-      <span>{album}</span>
-      <span>{releaseDate}</span>
-      <span>{genre}</span>
+    <div className="music-item">
+      <span className="text">{title}</span>
+      <span className="text">{artist}</span>
+      <span className="text">{album}</span>
+      <span className="text">{releaseDate}</span>
+      <span className="text">{genre}</span>
       <button type="submit">Delete</button>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import TextField from "../TextField/TextField";
 import axios from "axios";
+import "./NewMusicForm.css";
 
 const NewMusicForm = ({ onNewMusic }) => {
   const [title, setTitle] = useState("");

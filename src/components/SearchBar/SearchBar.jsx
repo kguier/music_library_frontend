@@ -7,7 +7,7 @@ function SearchBar({ placeholder, data }) {
       <div className="searchInputs">
         <input type="text" placeholder={placeholder} />
       </div>
-      <div className="dataResult">
+      {/* <div className="dataResult">
         {data.map((value, key) => {
           return (
             <a className="dataItem">
@@ -15,7 +15,7 @@ function SearchBar({ placeholder, data }) {
             </a>
           );
         })}
-      </div>
+      </div> */}
     </div>
   );
 }

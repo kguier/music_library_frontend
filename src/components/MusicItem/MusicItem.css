@@ -1,0 +1,12 @@
+.music-item {
+    background-color: lightgrey;
+    border-bottom: 2px solid grey;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    background-color: lightgray;
+    
+}

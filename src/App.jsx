@@ -28,13 +28,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {
+      <div className="flex-container">
         <MusicList
           music={music}
           activeIndex={{ activeIndex }}
           setActiveIndex={setActiveIndex}
         />
-      }
+      </div>
+
       <SearchBar placeholder="Search" />
       <NewMusicForm onNewMusic={fetchMusic} />
       <DeleteButton onNewMusic={fetchMusic} />
