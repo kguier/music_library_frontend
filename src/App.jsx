@@ -24,11 +24,6 @@ function App() {
     fetchMusic();
   }, []);
 
-  const handleNewMusic = (newSong) => {
-    const updatedMusic = [...music, newSong];
-    setMusic(updatedMusic);
-  };
-
   return (
     <div className="App">
       <Header />
@@ -40,7 +35,7 @@ function App() {
         />
       }
       <SearchBar />
-      <NewMusicForm onNewMusic={handleNewMusic} />
+      <NewMusicForm onNewMusic={fetchMusic} />
     </div>
   );
 }
