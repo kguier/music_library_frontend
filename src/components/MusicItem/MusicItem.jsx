@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DeleteButton from "../DeleteButton/DeleteButton";
 
 const MusicItem = ({
   title,
@@ -17,6 +18,7 @@ const MusicItem = ({
       <span>{album}</span>
       <span>{releaseDate}</span>
       <span>{genre}</span>
+      <button type="submit">Delete</button>
     </div>
   );
 };

@@ -6,6 +6,7 @@ import MusicList from "./components/MusicList/MusicList";
 import MusicItem from "./components/MusicItem/MusicItem";
 import SearchBar from "./components/SearchBar/SearchBar";
 import NewMusicForm from "./components/NewMusicForm/NewMusicForm";
+import DeleteButton from "./components/DeleteButton/DeleteButton";
 
 function App() {
   const [music, setMusic] = useState([]);
@@ -36,6 +37,7 @@ function App() {
       }
       <SearchBar />
       <NewMusicForm onNewMusic={fetchMusic} />
+      <DeleteButton onNewMusic={fetchMusic} />
     </div>
   );
 }
